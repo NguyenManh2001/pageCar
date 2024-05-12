@@ -306,7 +306,9 @@ export default function Home() {
                     {content.header}
                     <hr className="w-20 border border-green-400" />
                   </div>
-                  <div className="text-[12px]">{content.title}</div>
+                  <div className="md:text-[12px] text-[14px]">
+                    {content.title}
+                  </div>
                 </div>
               </div>
             ))}
@@ -336,7 +338,7 @@ export default function Home() {
                   style={{ backgroundImage: `url(${register.image})` }}
                   className="w-full md:h-96 h-[38rem]  bg-cover rounded-lg"
                 ></div>
-                <div className="w-full h-[90px] flex items-center text-green-400 justify-center text-center text-[16px] font-bold p-3">
+                <div className="w-full h-[90px] flex items-center text-green-400 justify-center text-center md:text-[16px] text-[21px] font-bold p-3">
                   {register.title}
                 </div>
               </div>
@@ -492,10 +494,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[720px] flex justify-center bg-white">
-        <div className="w-[90%] h-[720px] relative mt-9 ">
+      <div className="w-full h-[810px] flex justify-center bg-white">
+        <div className="w-[90%] h-[810px] relative mt-9 ">
           <div className="flex justify-center text-center">
-            <div className="md:w-[40%] w-[80%] h-[650px] border bg-white shadow-lg rounded-lg py-[28px]">
+            <div className="md:w-[40%] w-[80%] h-[730px] border bg-white shadow-lg rounded-lg py-[28px]">
               <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
                 Thông tin đăng ký
               </div>
@@ -511,9 +513,10 @@ export default function Home() {
                     name="name"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Input
                           {...field}
+                          className="h-[50px]"
                           status={errors.name?.message ? "error" : undefined}
                           placeholder="Nhập họ và tên"
                         />
@@ -529,9 +532,10 @@ export default function Home() {
                     name="number"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Input
                           {...field}
+                          className="h-[50px]"
                           status={errors.number?.message ? "error" : undefined}
                           placeholder="Số điện thoại"
                         />
@@ -547,9 +551,10 @@ export default function Home() {
                     name="address"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Input
                           {...field}
+                          className="h-[50px]"
                           status={errors.address?.message ? "error" : undefined}
                           placeholder="Nơi ở hiện tại"
                         />
@@ -565,9 +570,10 @@ export default function Home() {
                     name="icon"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Input
                           {...field}
+                          className="h-[50px]"
                           status={errors.icon?.message ? "error" : undefined}
                           placeholder="Nhãn hiệu xe(KIA,HUYNDAI,...)"
                         />
@@ -583,9 +589,10 @@ export default function Home() {
                     name="year"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Input
                           {...field}
+                          className="h-[50px]"
                           status={errors.year?.message ? "error" : undefined}
                           placeholder="Năm sản xuất"
                         />
@@ -601,9 +608,9 @@ export default function Home() {
                     name="type"
                     control={control}
                     render={({ field }) => (
-                      <div className="w-full h-12">
+                      <div className="w-full h-16">
                         <Select
-                          className="w-full flex"
+                          className="w-full flex h-[50px]"
                           value={watch("type")}
                           allowClear
                           placeholder="Chọn loại dịch vụ"
