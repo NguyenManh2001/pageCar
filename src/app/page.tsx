@@ -239,7 +239,7 @@ export default function Home() {
     }
   };
   return (
-    <div className="md:w-[1640px] w-[890px]">
+    <div className="w-full">
       {contextHolder}
       <div className="w-full h-[600px] bg-[url('/g55-20240319042742-03gxb.jpg')] bg-cover bg-center bg-origin-content bg-repeat relative">
         <div className="text-white absolute md:top-56 top-96 md:left-72 left-24  ">
