@@ -25,11 +25,11 @@ export default function RootLayout({
         />
       </Head>
       {/* <QueryClientProvider client={queryClient}> */}
-      <body className="md:w-[1640px] w-[165%]">
+      <body className="md:w-[1640px] w-[890px]">
         {/* <div className="w-full relative">
           <Header />
         </div> */}
-        <div className="flex w-full">
+        <div className="flex">
           {/* <div className="w-24 h-screen ">
             <Navbar />
           </div> */}
