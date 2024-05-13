@@ -25,7 +25,7 @@ export default function RootLayout({
           {/* <div className="w-24 h-screen ">
             <Navbar />
           </div> */}
-          <div className="w-screen">{children}</div>
+          <div>{children}</div>
         </div>
       </body>
       {/* </QueryClientProvider> */}
