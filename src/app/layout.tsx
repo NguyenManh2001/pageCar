@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +17,13 @@ export default function RootLayout({
   // const queryClient = new QueryClient();
   return (
     <html lang="en">
+      <Head>
+        <title>Your Website</title>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </Head>
       {/* <QueryClientProvider client={queryClient}> */}
       <body className={inter.className}>
         {/* <div className="w-full relative">
