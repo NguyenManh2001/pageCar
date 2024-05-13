@@ -25,7 +25,7 @@ export default function RootLayout({
         />
       </Head>
       {/* <QueryClientProvider client={queryClient}> */}
-      <body className="md:w-[1640px] w-[890px]">
+      <body className="md:w-[1640px] ">
         {/* <div className="w-full relative">
           <Header />
         </div> */}
