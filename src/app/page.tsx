@@ -241,7 +241,16 @@ export default function Home() {
   return (
     <div className="w-full">
       {contextHolder}
-      <div className="w-full h-[600px] bg-[url('/g55-20240319042742-03gxb.jpg')] bg-cover bg-center bg-origin-content bg-repeat relative">
+      <div className="flex w-full flex-col items-center justify-between relative">
+        <div className="w-full md:h-[40rem] h-[40rem]">
+          <Image
+            src="/g55-20240319042742-03gxb.jpg"
+            className="rounded-md h-full"
+            width={1800}
+            height={500}
+            alt="Picture of the author"
+          />
+        </div>
         <div className="text-white absolute md:top-56 top-96 md:left-72 left-24  ">
           <h3 className="text-[45px] font-bold">Hướng Dẫn Đăng Ký</h3>
           <div className="w-[34rem]">
