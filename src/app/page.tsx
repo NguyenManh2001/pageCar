@@ -242,25 +242,25 @@ export default function Home() {
     <div className="w-full">
       {contextHolder}
       <div className="flex w-full flex-col items-center justify-between relative">
-        <div className="w-full md:h-[40rem] h-[40rem]">
+        <div className="w-full md:h-[40rem] h-[24rem]">
           <Image
             src="/g55-20240319042742-03gxb.jpg"
-            className="rounded-md h-full"
-            width={1600}
-            height={500}
+            className="rounded-md w-full h-full"
+            width={1800}
+            height={700}
             alt="Picture of the author"
           />
         </div>
-        <div className="text-white absolute md:top-56 top-96 md:left-72 left-8  ">
+        <div className="text-white absolute md:top-56 top-48 md:left-72 left-8  ">
           <h3 className="md:text-[45px] text-[35px] font-bold">
             Hướng Dẫn Đăng Ký
           </h3>
-          <div className="md:w-[34rem]">
+          <div className="md:w-[34rem] md:text-[17px] text-[13px]">
             Tham khảo thông tin hồ sơ hoặc đăng ký để chúng tôi giúp bạn hoàn
             tất các bước chuẩn bị. Hãy đăng ký để trở thành tài xế lái xe công
             nghệ
           </div>
-          <div className="flex justify-center items-center text-[20px] w-52 h-12 bg-green-600 border-green-600 rounded-xl m-[25px]">
+          <div className="flex justify-center items-center text-[20px] w-52 h-12 bg-green-600 border-green-600 rounded-xl md:m-[25px] m-[14px]">
             <Link href="#">Hướng dẫn ngay</Link>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function Home() {
       </div>
       <div className="md:w-[90%] w-full h-[600px] bg-white relative flex  ">
         {/* <div className="md:w-1/2 w-full md:mt-0 mt-[72px] h-[500px] bg-[url('/655486228925-bk-1x-20230705145317-8eqkx.jpg')] bg-cover ml-[8%] flex"></div> */}
-        <div className="md:w-1/2 w-full  md:h-[500px] md:mt-0 mt-[72px] md:ml-[8%] flex">
+        <div className="md:w-1/2 w-full  md:h-[500px] md:mt-0 mt-[72px] md:ml-[8%] ml-2 flex">
           <Image
             src="/655486228925-bk-1x-20230705145317-8eqkx.jpg"
             className="rounded-md h-full"
@@ -299,7 +299,7 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] ">
+        <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] ml-2">
           <div className="w-30 text-[50px] text-green-600 font-bold mt-[50px]">
             G
           </div>
@@ -310,7 +310,7 @@ export default function Home() {
             {contents.map((content, index) => (
               <div
                 key={index}
-                className="w-[96%] h-28 border bg-white rounded-full shadow-lg flex items-center md:mt-0 mt-[10px] md:ml-0 ml-2"
+                className="w-[96%] h-28 border bg-white rounded-full shadow-lg flex items-center md:mt-0 mt-[10px] md:ml-0"
               >
                 <div className="md:w-[22%] w-[125px] h-16 border rounded-full bg-green-500 flex justify-center items-center mx-[10px]">
                   <Image
@@ -342,7 +342,7 @@ export default function Home() {
       </div>
       <div className="w-full md:h-[650px] h-[2790px] flex justify-center mt-[145%] md:mt-0">
         <div className="w-[90%] min-h-[600px] bg-white text-center ">
-          <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
+          <div className="md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 ">
             Các bước chuẩn bị hồ sơ đăng ký
           </div>
           <div className="flex justify-center ">
@@ -376,17 +376,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full md:h-[685px] h-[1160px] flex justify-center md:mt-[35%] mt-[130%]">
+      <div className="w-full md:h-[685px] h-[1080px] flex justify-center md:mt-[35%] mt-[130%]">
         <div className="w-[90%] h-[600px] bg-white relative mt-14 text-center ">
-          <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
+          <div className="md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 ">
             Giấy tờ cần chuẩn bị để đăng ký
           </div>
           <div className="flex justify-center ">
             Quý Anh/Chị vui lòng tham khảo và tìm hiểu hồ sơ đăng ký trở thành
             tài xế GrabCar tại đây.
           </div>
-          <div className="w-full md:flex-row flex-col md:h-[500px] h-[1000px]  flex justify-evenly ">
-            <div className="md:w-1/3 w-full h-[29rem] md:h-96 bg-white rounded-md p-2 my-8 ">
+          <div className="w-full md:flex-row flex-col md:h-[500px] h-[1000px]  flex justify-start ">
+            <div className="md:w-1/3 w-full h-[24rem] md:h-96 bg-white rounded-md p-2 my-8 ">
               <div className="text-[30px] font-bold custom-text pt-3 pb-6 border-b-2 flex items-center">
                 <Image
                   src="/admin.svg"
@@ -410,7 +410,7 @@ export default function Home() {
                           alt="Picture of the author"
                         />
                       </div>
-                      <p className="text-[17px] font-medium md:w-[80%] w-[85%]">
+                      <p className="md:text-[17px] text-[13px] text-justify font-medium md:w-[80%] w-[85%]">
                         {feature.title}
                       </p>
                     </li>
@@ -418,7 +418,7 @@ export default function Home() {
                 </ul>
               </div>
             </div>
-            <div className="md:w-1/3 w-full h-[29rem] md:h-96 bg-white rounded-md p-2 my-8">
+            <div className="md:w-1/3 w-full h-[18rem] md:h-96 bg-white rounded-md p-2 my-8">
               <div className="text-[30px]  font-bold custom-text  pt-3 pb-6 border-b-2 flex items-center">
                 <Image
                   src="/car.svg"
@@ -442,7 +442,7 @@ export default function Home() {
                           alt="Picture of the author"
                         />
                       </div>
-                      <p className="text-[17px] font-medium w-[80%]">
+                      <p className="md:text-[17px] text-[13px] text-justify font-medium w-[80%]">
                         {file.title}
                       </p>
                     </li>
@@ -453,7 +453,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[150px] h-[240px] bg-green-500 flex  justify-center items-center md:mt-0 mt-[53%]">
+      <div className="w-full md:h-[150px] h-[240px] bg-green-500 flex  justify-center items-center md:mt-0 mt-[4%]">
         <div className="flex justify-around md:flex-row flex-col items-center w-[90%] text-center">
           <div className="mx-5">
             <div className="md:text-[30px] text-[26px] font-bold text-white h-14">
@@ -471,10 +471,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[600px] h-[1770px] flex justify-center bg-sky-50">
+      <div className="w-full md:h-[600px] h-[1580px] flex justify-center bg-sky-50">
         <div className="w-[90%] h-[600px] relative mt-7  md:ml-0 ml-[10px]">
           <div className="w-full flex justify-center ">
-            <div className=" md:w-[50%] w-full text-[40px] font-bold text-green-500 flex justify-center m-2 text-center ">
+            <div className=" md:w-[50%] w-full md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 text-center ">
               CẢM NHẬN CỦA KHÁCH HÀNG VỀ SẢN PHẨM/DỊCH VỤ
             </div>
           </div>
@@ -523,11 +523,11 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[810px] h-[960px] flex justify-center bg-white">
+      <div className="w-full md:h-[810px] h-[850px] flex justify-center bg-white">
         <div className="w-[90%] md:h-[810px]  relative mt-9 ">
           <div className="flex justify-center text-center">
-            <div className="md:w-[40%]  w-[98%] md:h-[730px] h-[850px] border bg-white shadow-lg rounded-lg py-[28px]">
-              <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
+            <div className="md:w-[40%]  w-[98%] md:h-[730px] h-[775px] border bg-white shadow-lg rounded-lg py-[28px]">
+              <div className="md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 ">
                 Thông tin đăng ký
               </div>
               <div className="flex justify-center text-center">
