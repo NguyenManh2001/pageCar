@@ -287,7 +287,16 @@ export default function Home() {
         </div>
       </div>
       <div className="w-[90%] h-[600px] bg-white relative flex  ">
-        <div className="md:w-1/2 w-full md:mt-0 mt-[72px] h-[500px] bg-[url('/655486228925-bk-1x-20230705145317-8eqkx.jpg')] bg-cover ml-[8%] flex"></div>
+        {/* <div className="md:w-1/2 w-full md:mt-0 mt-[72px] h-[500px] bg-[url('/655486228925-bk-1x-20230705145317-8eqkx.jpg')] bg-cover ml-[8%] flex"></div> */}
+        <div className="md:w-1/2 w-full  h-[500px] md:mt-0 mt-[72px] ml-[8%] flex">
+          <Image
+            src="/655486228925-bk-1x-20230705145317-8eqkx.jpg"
+            className="rounded-md h-full"
+            width={1800}
+            height={500}
+            alt="Picture of the author"
+          />
+        </div>
         <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] left-7">
           <div className="w-30 text-[50px] text-green-600 font-bold mt-[50px]">
             G
