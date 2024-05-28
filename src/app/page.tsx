@@ -246,7 +246,7 @@ export default function Home() {
           <Image
             src="/g55-20240319042742-03gxb.jpg"
             className="rounded-md h-full"
-            width={1800}
+            width={1600}
             height={500}
             alt="Picture of the author"
           />
@@ -673,7 +673,16 @@ export default function Home() {
         <div className="w-[80%] p-7 text-white">
           <div className="text-[30px]  font-bold">Thông tin liên hệ: </div>
           <div className="h-16 flex items-center">
-            <div className="w-14 h-14 bg-[url('/phone.svg')] rounded-full bg-cover"></div>
+            {/* <div className="w-14 h-14 bg-[url('/phone.svg')] rounded-full bg-cover"></div> */}
+            <div className="w-14 h-14">
+              <Image
+                src="/phone.svg"
+                className="rounded-md h-full"
+                width={1800}
+                height={500}
+                alt="Picture of the author"
+              />
+            </div>
             <div className="mx-3">
               Ms. Huyền 0981207729 - Trưởng Phòng hỗ trợ tài xế đăng ký mới
               <div>đ/c: số 19 Xuân Quỳnh, Trung Hoà, Cầu Giấy, HN</div>

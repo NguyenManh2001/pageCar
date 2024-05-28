@@ -17,24 +17,8 @@ export default function RootLayout({
   // const queryClient = new QueryClient();
   return (
     <html lang="en">
-      <Head>
-        <title>Your Website</title>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-      </Head>
-      {/* <QueryClientProvider client={queryClient}> */}
-      <body className="md:w-[1640px] w-[890px]">
-        {/* <div className="w-full relative">
-          <Header />
-        </div> */}
-        <div className="flex">
-          {/* <div className="w-24 h-screen ">
-            <Navbar />
-          </div> */}
-          <div>{children}</div>
-        </div>
+      <body className="md:w-full w-screen">
+        <div>{children}</div>
       </body>
       {/* </QueryClientProvider> */}
     </html>
