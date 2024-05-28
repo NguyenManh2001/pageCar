@@ -7,10 +7,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
-  showLayout = true,
 }: Readonly<{
   children: React.ReactNode;
-  showLayout: boolean;
 }>) {
   return (
     <html lang="en">
