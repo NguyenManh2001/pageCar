@@ -251,9 +251,11 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <div className="text-white absolute md:top-56 top-96 md:left-72 left-24  ">
-          <h3 className="text-[45px] font-bold">Hướng Dẫn Đăng Ký</h3>
-          <div className="w-[34rem]">
+        <div className="text-white absolute md:top-56 top-96 md:left-72 left-8  ">
+          <h3 className="md:text-[45px] text-[35px] font-bold">
+            Hướng Dẫn Đăng Ký
+          </h3>
+          <div className="md:w-[34rem]">
             Tham khảo thông tin hồ sơ hoặc đăng ký để chúng tôi giúp bạn hoàn
             tất các bước chuẩn bị. Hãy đăng ký để trở thành tài xế lái xe công
             nghệ
@@ -286,9 +288,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[90%] h-[600px] bg-white relative flex  ">
+      <div className="md:w-[90%] w-full h-[600px] bg-white relative flex  ">
         {/* <div className="md:w-1/2 w-full md:mt-0 mt-[72px] h-[500px] bg-[url('/655486228925-bk-1x-20230705145317-8eqkx.jpg')] bg-cover ml-[8%] flex"></div> */}
-        <div className="md:w-1/2 w-full  h-[500px] md:mt-0 mt-[72px] ml-[8%] flex">
+        <div className="md:w-1/2 w-full  md:h-[500px] md:mt-0 mt-[72px] md:ml-[8%] flex">
           <Image
             src="/655486228925-bk-1x-20230705145317-8eqkx.jpg"
             className="rounded-md h-full"
@@ -297,18 +299,18 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] left-7">
+        <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] ">
           <div className="w-30 text-[50px] text-green-600 font-bold mt-[50px]">
             G
           </div>
           <div className="w-30 text-[30px] font-[900]  mb-3">
             Lựa chọn hàng đầu của tài xế công nghệ
           </div>
-          <div className="w-full h-[20rem] grid md:grid-cols-2 grid-cols-1 grid-flow-row md:mt-0 mt-[50%]">
+          <div className="w-full h-[20rem] grid md:grid-cols-2 grid-cols-1 grid-flow-row md:mt-0 md:ml-0 mt-[87%] ">
             {contents.map((content, index) => (
               <div
                 key={index}
-                className="w-[98%] h-28 border bg-white rounded-full shadow-lg flex items-center md:mt-0 mt-[10px] md:ml-0 ml-2"
+                className="w-[96%] h-28 border bg-white rounded-full shadow-lg flex items-center md:mt-0 mt-[10px] md:ml-0 ml-2"
               >
                 <div className="md:w-[22%] w-[125px] h-16 border rounded-full bg-green-500 flex justify-center items-center mx-[10px]">
                   <Image
@@ -324,39 +326,48 @@ export default function Home() {
                     {content.header}
                     <hr className="w-20 border border-green-400" />
                   </div>
-                  <div className="md:text-[12px] text-[14px]">
+                  <div className="md:text-[12px] text-[11px]">
                     {content.title}
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <div className="w-full flex justify-center mt-[24%] md:mt-0">
+          <div className="w-full flex justify-center mt-[45%] md:mt-0">
             <div className="flex justify-center items-center text-[20px] w-52 h-12 bg-green-600 border-green-600 rounded-xl m-[25px] text-white">
               <Link href="#">Tìm hiểu ngay</Link>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full h-full flex justify-center mt-[65%] md:mt-0">
-        <div className="w-[90%] min-h-[600px] bg-white  ">
+      <div className="w-full md:h-[650px] h-[2790px] flex justify-center mt-[145%] md:mt-0">
+        <div className="w-[90%] min-h-[600px] bg-white text-center ">
           <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
             Các bước chuẩn bị hồ sơ đăng ký
           </div>
           <div className="flex justify-center ">
             Dưới đây là các bước để chuẩn bị hồ sơ đăng ký tài xế xe công nghệ
           </div>
-          <div className="w-full md:h-[20rem] h-[214rem] grid md:grid-cols-3 grid-cols-1 grid-flow-row ">
+          <div className="w-full md:h-[20rem] h-[195rem] grid md:grid-cols-3 grid-cols-1 grid-flow-row ">
             {registers.map((register, index) => (
               <div
                 key={index}
-                className="w-[95%] md:h-[480px] h-[701px]  border-2 border-green-400 rounded-2xl mt-16 ml-[10px] "
+                className="w-[95%] md:h-[480px] h-[465px]  border-2 border-green-400 rounded-2xl md:mt-16 mt-8 ml-[10px] "
               >
-                <div
+                {/* <div
                   style={{ backgroundImage: `url(${register.image})` }}
                   className="w-full md:h-96 h-[38rem]  bg-cover rounded-lg"
-                ></div>
-                <div className="w-full h-[90px] flex items-center text-green-400 justify-center text-center md:text-[16px] text-[21px] font-bold p-3">
+                ></div> */}
+                <div className="w-full md:h-96 h-[20rem]  bg-cover rounded-lg">
+                  <Image
+                    src={register.image}
+                    className="rounded-md h-full"
+                    width={1800}
+                    height={500}
+                    alt="Picture of the author"
+                  />
+                </div>
+                <div className="w-full h-[90px] flex items-center text-green-400 justify-center text-center md:text-[16px] text-[21px] font-bold p-3 md:mt-0 mt-5">
                   {register.title}
                 </div>
               </div>
@@ -365,8 +376,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full h-full flex justify-center md:mt-[35%] mt-[130%]">
-        <div className="w-[90%] h-[600px] bg-white relative mt-14 ">
+      <div className="w-full md:h-[685px] h-[1160px] flex justify-center md:mt-[35%] mt-[130%]">
+        <div className="w-[90%] h-[600px] bg-white relative mt-14 text-center ">
           <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
             Giấy tờ cần chuẩn bị để đăng ký
           </div>
@@ -399,7 +410,7 @@ export default function Home() {
                           alt="Picture of the author"
                         />
                       </div>
-                      <p className="text-[17px] font-medium w-[80%]">
+                      <p className="text-[17px] font-medium md:w-[80%] w-[85%]">
                         {feature.title}
                       </p>
                     </li>
@@ -442,13 +453,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[150px] h-[200px] bg-green-500 flex  justify-center items-center md:mt-0 mt-[53%]">
-        <div className="flex justify-around md:flex-row flex-col items-center w-[90%]">
+      <div className="w-full md:h-[150px] h-[240px] bg-green-500 flex  justify-center items-center md:mt-0 mt-[53%]">
+        <div className="flex justify-around md:flex-row flex-col items-center w-[90%] text-center">
           <div className="mx-5">
             <div className="md:text-[30px] text-[26px] font-bold text-white h-14">
               Lái xe G - Toàn thời gian hoặc bán thời gian
             </div>
-            <div className="text-gray-200">
+            <div className="text-gray-200 md:mt-0 mt-[30px]">
               Chủ động thời gian làm việc, thu nhập lên đến 35 triệu đồng mỗi
               tháng
             </div>
@@ -460,10 +471,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[600px] h-[1300px] flex justify-center bg-sky-50">
+      <div className="w-full md:h-[600px] h-[1770px] flex justify-center bg-sky-50">
         <div className="w-[90%] h-[600px] relative mt-7  md:ml-0 ml-[10px]">
           <div className="w-full flex justify-center ">
-            <div className=" md:w-[50%] w-[76%] text-[40px] font-bold text-green-500 flex justify-center m-2 text-center ">
+            <div className=" md:w-[50%] w-full text-[40px] font-bold text-green-500 flex justify-center m-2 text-center ">
               CẢM NHẬN CỦA KHÁCH HÀNG VỀ SẢN PHẨM/DỊCH VỤ
             </div>
           </div>
@@ -474,7 +485,7 @@ export default function Home() {
             {chats.map((chat, index) => (
               <div
                 key={index}
-                className="w-[95%] h-[300px] bg-white shadow-lg rounded-lg mt-16 ml-[10px] md:ml-0"
+                className="w-[95%] h-[380px] bg-white shadow-lg rounded-lg mt-16 ml-[10px] md:ml-0"
               >
                 <div className="flex w-full px-5 py-8 justify-between">
                   <Image
@@ -490,7 +501,7 @@ export default function Home() {
                 </div>
                 <div className="w-full">
                   <div className="w-full flex justify-center">
-                    <div className=" w-[90%] flex justify-center h-32 border-b-2 ">
+                    <div className=" w-[90%] flex justify-center h-48 border-b-2 ">
                       <div className="text-blue-900 text-center w-full">
                         {chat.title}
                       </div>
@@ -512,21 +523,21 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full h-[810px] flex justify-center bg-white">
-        <div className="w-[90%] h-[810px] relative mt-9 ">
+      <div className="w-full md:h-[810px] h-[960px] flex justify-center bg-white">
+        <div className="w-[90%] md:h-[810px]  relative mt-9 ">
           <div className="flex justify-center text-center">
-            <div className="md:w-[40%] w-[80%] h-[730px] border bg-white shadow-lg rounded-lg py-[28px]">
+            <div className="md:w-[40%]  w-[98%] md:h-[730px] h-[850px] border bg-white shadow-lg rounded-lg py-[28px]">
               <div className="text-[40px] font-bold text-green-500 flex justify-center m-2 ">
                 Thông tin đăng ký
               </div>
               <div className="flex justify-center text-center">
-                <div className="flex text-center w-[62%]">
+                <div className="flex text-center md:w-[62%] w-[90%]">
                   Đăng ký thông tin bên dưới để nhận ưu đãi miễn phí làm tem phù
                   hiệu Hợp Tác Xã trị giá 500K
                 </div>
               </div>
               <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="name"
                     control={control}
@@ -545,7 +556,7 @@ export default function Home() {
                     )}
                   />
                 </div>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="number"
                     control={control}
@@ -564,7 +575,7 @@ export default function Home() {
                     )}
                   />
                 </div>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="address"
                     control={control}
@@ -583,7 +594,7 @@ export default function Home() {
                     )}
                   />
                 </div>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="icon"
                     control={control}
@@ -602,7 +613,7 @@ export default function Home() {
                     )}
                   />
                 </div>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="year"
                     control={control}
@@ -621,7 +632,7 @@ export default function Home() {
                     )}
                   />
                 </div>
-                <div className="w-[100%] pt-4 px-20">
+                <div className="w-[100%] pt-4 md:px-20 px-4">
                   <Controller
                     name="type"
                     control={control}
@@ -670,8 +681,8 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[200px] flex justify-center bg-blue-950">
-        <div className="w-[80%] p-7 text-white">
-          <div className="text-[30px]  font-bold">Thông tin liên hệ: </div>
+        <div className="md:w-[80%] w-full md:p-7 p-3 text-white">
+          <div className="text-[30px]  font-bold mb-6">Thông tin liên hệ: </div>
           <div className="h-16 flex items-center">
             {/* <div className="w-14 h-14 bg-[url('/phone.svg')] rounded-full bg-cover"></div> */}
             <div className="w-14 h-14">
