@@ -385,7 +385,7 @@ export default function Home() {
             Quý Anh/Chị vui lòng tham khảo và tìm hiểu hồ sơ đăng ký trở thành
             tài xế GrabCar tại đây.
           </div>
-          <div className="w-full md:flex-row flex-col md:h-[500px] h-[1000px]  flex justify-start ">
+          <div className="w-full md:flex-row flex-col md:h-[500px] h-[1000px]  flex md:justify-evenly justify-start ">
             <div className="md:w-1/3 w-full h-[24rem] md:h-96 bg-white rounded-md p-2 my-8 ">
               <div className="text-[30px] font-bold custom-text pt-3 pb-6 border-b-2 flex items-center">
                 <Image
