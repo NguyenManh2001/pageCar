@@ -242,7 +242,7 @@ export default function Home() {
     <div className="w-full">
       {contextHolder}
       <div className="flex w-full flex-col items-center justify-between relative">
-        <div className="w-full md:h-[40rem] h-[24rem]">
+        <div className="w-full md:h-[40rem] h-[18rem]">
           <Image
             src="/g55-20240319042742-03gxb.jpg"
             className="rounded-md w-full h-full"
@@ -251,8 +251,8 @@ export default function Home() {
             alt="Picture of the author"
           />
         </div>
-        <div className="text-white absolute md:top-56 top-48 md:left-72 left-8  ">
-          <h3 className="md:text-[45px] text-[35px] font-bold">
+        <div className="text-white absolute md:top-56 top-28 md:left-72 left-8  ">
+          <h3 className="md:text-[45px] text-[30px] font-bold">
             Hướng Dẫn Đăng Ký
           </h3>
           <div className="md:w-[34rem] md:text-[17px] text-[13px]">
@@ -260,7 +260,7 @@ export default function Home() {
             tất các bước chuẩn bị. Hãy đăng ký để trở thành tài xế lái xe công
             nghệ
           </div>
-          <div className="flex justify-center items-center text-[20px] w-52 h-12 bg-green-600 border-green-600 rounded-xl md:m-[25px] m-[14px]">
+          <div className="flex justify-center items-center md:text-[20px] text-[18px]  md:w-52 w-44 h-12 bg-green-600 border-green-600 rounded-xl md:m-[25px] m-[14px]">
             <Link href="#">Hướng dẫn ngay</Link>
           </div>
         </div>
@@ -290,7 +290,7 @@ export default function Home() {
       </div>
       <div className="md:w-[90%] w-full h-[600px] bg-white relative flex  ">
         {/* <div className="md:w-1/2 w-full md:mt-0 mt-[72px] h-[500px] bg-[url('/655486228925-bk-1x-20230705145317-8eqkx.jpg')] bg-cover ml-[8%] flex"></div> */}
-        <div className="md:w-1/2 w-full  md:h-[500px] md:mt-0 mt-[72px] md:ml-[8%] ml-2 flex">
+        <div className="md:w-1/2 w-full  md:h-[500px] h-[340px] md:mt-0 mt-[119px] md:ml-[8%] ml-2 flex">
           <Image
             src="/655486228925-bk-1x-20230705145317-8eqkx.jpg"
             className="rounded-md h-full"
@@ -300,13 +300,13 @@ export default function Home() {
           />
         </div>
         <div className="md:w-[55%] w-full h-[500px]  absolute md:left-[53%] ml-2">
-          <div className="w-30 text-[50px] text-green-600 font-bold mt-[50px]">
+          <div className="w-30 text-[50px] text-green-600 font-bold mt-[13px]">
             G
           </div>
           <div className="w-30 text-[30px] font-[900]  mb-3">
             Lựa chọn hàng đầu của tài xế công nghệ
           </div>
-          <div className="w-full h-[20rem] grid md:grid-cols-2 grid-cols-1 grid-flow-row md:mt-0 md:ml-0 mt-[87%] ">
+          <div className="w-full h-[20rem] grid md:grid-cols-2 grid-cols-1 grid-flow-row md:mt-0 md:ml-0 mt-[68%] ">
             {contents.map((content, index) => (
               <div
                 key={index}
@@ -340,7 +340,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full md:h-[650px] h-[2790px] flex justify-center mt-[145%] md:mt-0">
+      <div className="w-full md:h-[550px] h-[2750px] flex justify-center mt-[110%] md:mt-0">
         <div className="w-[90%] min-h-[600px] bg-white text-center ">
           <div className="md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 ">
             Các bước chuẩn bị hồ sơ đăng ký
@@ -348,17 +348,17 @@ export default function Home() {
           <div className="flex justify-center ">
             Dưới đây là các bước để chuẩn bị hồ sơ đăng ký tài xế xe công nghệ
           </div>
-          <div className="w-full md:h-[20rem] h-[195rem] grid md:grid-cols-3 grid-cols-1 grid-flow-row ">
+          <div className="w-full md:h-[20rem] h-[160rem] grid md:grid-cols-3 grid-cols-1 grid-flow-row md:ml-[10px]">
             {registers.map((register, index) => (
               <div
                 key={index}
-                className="w-[95%] md:h-[480px] h-[465px]  border-2 border-green-400 rounded-2xl md:mt-16 mt-8 ml-[10px] "
+                className="w-[95%] md:h-[430px] h-[375px]  border-2 border-green-400 rounded-2xl md:mt-16 mt-8 ml-[10px] "
               >
                 {/* <div
                   style={{ backgroundImage: `url(${register.image})` }}
                   className="w-full md:h-96 h-[38rem]  bg-cover rounded-lg"
                 ></div> */}
-                <div className="w-full md:h-96 h-[20rem]  bg-cover rounded-lg">
+                <div className="w-full md:h-80 h-[15rem]  bg-cover rounded-lg">
                   <Image
                     src={register.image}
                     className="rounded-md h-full"
@@ -376,8 +376,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full md:h-[685px] h-[1080px] flex justify-center md:mt-[35%] mt-[130%]">
-        <div className="w-[90%] h-[600px] bg-white relative mt-14 text-center ">
+      <div className="w-full md:h-[685px] h-[1010px] flex justify-center md:mt-[35%] ">
+        <div className="w-[90%] h-[600px] bg-white relative md:mt-14  text-center ">
           <div className="md:text-[40px] text-[33px] font-bold text-green-500 flex justify-center m-2 ">
             Giấy tờ cần chuẩn bị để đăng ký
           </div>
@@ -485,7 +485,7 @@ export default function Home() {
             {chats.map((chat, index) => (
               <div
                 key={index}
-                className="w-[95%] h-[380px] bg-white shadow-lg rounded-lg mt-16 ml-[10px] md:ml-0"
+                className="w-[95%] md:h-[330px] h-[380px] bg-white shadow-lg rounded-lg mt-16 ml-[10px] md:ml-0"
               >
                 <div className="flex w-full px-5 py-8 justify-between">
                   <Image
@@ -501,7 +501,7 @@ export default function Home() {
                 </div>
                 <div className="w-full">
                   <div className="w-full flex justify-center">
-                    <div className=" w-[90%] flex justify-center h-48 border-b-2 ">
+                    <div className=" w-[90%] flex justify-center h-48 md:h-36 border-b-2 ">
                       <div className="text-blue-900 text-center w-full">
                         {chat.title}
                       </div>
